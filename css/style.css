@@ -1,0 +1,44 @@
+body {
+  background: url('../images/bg2.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -background-size: cover;
+  font-family: 'Arimo', sans-serif;
+}
+
+h1 {
+  color: black;
+  font-size: 50px;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+h2 {
+  color: black;
+  font-size 20px;
+  margin-top: 5px;
+}
+
+.summary {
+  color: black;
+  font-size: 16px;
+}
+
+.face {
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+}
+
+.about {
+  width: 450px;
+  margin: auto;
+  text-align: center;
+  padding-top: 20px;
+  }
+  
+  .separator {
+    height: 2px;
+    background-color: black;
+  }

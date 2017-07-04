@@ -1,0 +1,1 @@
+A basic portfolio and resume site to display my knowledge of basic HTML/CSS, jQuery, and some standard programs in Javascript and Python
