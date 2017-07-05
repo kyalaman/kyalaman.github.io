@@ -1,5 +1,5 @@
 body {
-  background: url('../images/bg2.png') no-repeat center center fixed;
+  background: url('../images/bg2.jpeg') no-repeat top center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -21,7 +21,7 @@ h2 {
 }
 
 .summary {
-  color: black;
+  color: purple;
   font-size: 16px;
 }
 
@@ -33,7 +33,7 @@ h2 {
 
 .about {
   width: 450px;
-  margin: auto;
+  margin: 50px auto 0px auto;
   text-align: center;
   padding-top: 20px;
   }
