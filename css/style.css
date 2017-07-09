@@ -19,7 +19,7 @@ h2 {
 
 h3 {
   text-align: center;
-  font-size: 2em;
+  font-size: 1.75em;
   font-weight: normal;
   margin-top: 6.25rem;
   margin-bottom: .625rem;
@@ -62,7 +62,7 @@ h4 {
   background-color: white;
 }
 
-.code-break {
+.title-break {
   height: .625rem;
   border: 0;
   box-shadow: 0 .625rem .625rem -.625rem #0C12B0 inset;
@@ -82,4 +82,15 @@ h4 {
 
 .code-text {
   text-align: center;
+}
+
+.skills {
+  max-width: 400px;
+  text-align: center;
+  margin: 2rem auto 2rem auto;
+}
+
+.icons {
+    text-align: center;
+    padding-bottom: 2rem;
 }

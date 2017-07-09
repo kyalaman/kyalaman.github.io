@@ -1,8 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
 <html>
   <head>
     <link  type="text/css" rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="prism/prism-atom-dark.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="prism/prism.js"></script>
   </head>
   <body>
     <div class="about-container">
@@ -16,7 +20,7 @@
       </div>
     </div>
     <h3>Code Examples</h3>
-    <hr class ="code-break">
+    <hr class ="title-break">
     
     <div class="box">
       <h4>Temperature Conversion</h4>
@@ -27,36 +31,77 @@
       </p>
     </div>
     <div class="box">
-      Right Side
+      <pre><code class="language-javascript">
+      var n = 0;
+      while (n < 10) {
+        console.log("Hello, " + n");
+        n += 1;
+      } </code></pre>
     </div>
     <br class="clear" />
     
-        <div class="box">
-      Left Side
+    <div class="box">
+      <pre><code class="language-javascript"> 
+      function findPrimes(n) {
+        var primes = new Array(n+1).fill(true);
+        var max = Math.sqrt(n);
+        
+        for (i = 2; i <= max; i++) {
+          if (primes[i]) {
+            for (j = i*i; j <= n; j += i) {
+              primes[j] = false;
+            }
+          }
+        }
+        var list = [];
+        for (k = 2; k <= n; k++) {
+          if (primes[k]) {
+            list.push(k);
+          }
+        }
+        return list;
+      }
+      </code></pre>
     </div>
     <div class="box">
-      <h4>Ordinal Challenge</h4>
+      <h4>Prime Numbers</h4>
       <p class="code-text">
-        This ruby program will convert a plain number
-        to the ordinal of the number. So for example,
-        if the user enters 2, it will display 2nd, if
-        the user enters 3, it will display 3rd, etc.
+        This Javascript program returns an array of prime numbers up through an integer input n, using the Sieve of Eratosthenes algorithm.
       </p>
     </div>
     <br class="clear" />
     
     <div class="box">
-      <h4>Foobar</h4>
+      <h4>FizzBuzz</h4>
       <p class="code-text">
-        This ruby program is an adaptation of a classic technical
-        interview problem which displays sequences
-        of the Foobar pattern.
+      Javascript program for the standard FizzBuzz interview question: Write a program that prints the numbers from 1 to n. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
       </p>
     </div>    
     <div class="box">
-      Right Side
+      <pre><code class="language-javascript"> 
+      var fizzBuzz = function(n) {
+        var output;
+        for (var i = 1; i <= n; i ++)
+          output = "";
+          if (number % 3 === 0) {
+            output += "Fizz";
+          }
+          if (number % 5 === 0) {
+            output += "Buzz";
+          }
+          console.log(output || i);
+        }
+      };
+      </code></pre>
     </div>
     <br class="clear" />
     
+    <h3>Skills & Tools</h3>
+    <hr class="title-break" />
+    <p class="skills">
+    Kalyan has proficiency and knowledge of the following languages, frameworks, and tools.</p>
+    <div class="icons">
+      <img src="images/skills.png" />
+    </div>
   </body>
 </html> 
