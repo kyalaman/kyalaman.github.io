@@ -1,51 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Kalyan Yalamanchi - Software Developer</title>
-    <link  type="text/css" rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="prism/prism-atom-dark.css" type="text/css" media="screen" />
-    <script type="text/javascript" src="prism/prism.js"></script>
-  </head>
-  <body>
-    <div class="about-container">
-      <div class="about">
-        <img src="images/me.jpg" alt="Kalyan Yalamanchi's photo" class="face">
-        <h1>Kalyan Yalamanchi</h1>
-        <h2>Software Developer</h2>
-        <hr class = "separator"/>
-        <p class="summary">A chemical engineer performing research turned software developer writing code.  Graduated from Princeton University with a BSE in Chemical Engineering and several years ago decided to change careers to pursue my passion in computer science.  My engineering background combined with self-taught programming knowledge makes me a perfect fit for an entry-level position.
-        </p>
-      </div>
-    </div>
-    <h3>Code Examples</h3>
-    <hr class ="title-break">
-    
-    <div class="box">
-      <h4>Temperature Conversion</h4>
-      <p class="code-text">
-        This ruby program will prompt the user for a temperature
-        in degrees Celsius and let the user know what the
-        corresponding temperature is in Fahrenheit.
+
+<head>
+  <title>Kalyan Yalamanchi - Software Developer</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kalyan Yalamanchi is a professional software developer specializing in front-end development.  He has experience with HTML/CSS, JavaScript, Python, jQuery, Bootstrap, React, and Angular along with SQL and Git knowledge.">
+  <link rel="stylesheet" href="prism/prism-atom-dark.css" type="text/css" media="screen" />
+  <script type="text/javascript" src="prism/prism.js"></script>
+  <script src="https://use.fontawesome.com/b1fc7cf11e.js"></script>
+</head>
+
+<body>
+  <div class="about-container">
+    <ul>
+      <li><a href="#about-me" class="nav-link">About</a></li>
+      <li><a href="#code-samples" class="nav-link">Code Samples</a></li>
+      <li><a href="#web-apps" class="nav-link">Web Apps</a></li>
+      <li><a href="#skills-tools" class="nav-link">Skills & Tools</a></li>
+      <li class="hire-me"><a href="#contact-me" class="nav-link">Hire Me</a></li>
+    </ul>
+    <div id="about-me" class="about">
+      <img src="images/me.jpg" alt="Kalyan Yalamanchi's photo" class="face">
+      <h1>Kalyan Yalamanchi</h1>
+      <h2>Software Developer</h2>
+      <hr class="separator" />
+      <p class="summary">
+        A chemical engineer performing research turned software developer writing code. Graduated from Princeton University with a BSE in Chemical Engineering and several years ago decided to change careers to pursue my passion in computer science. My engineering
+        background combined with self-taught programming knowledge makes me a perfect fit for an entry-level position.
       </p>
     </div>
-    <div class="box">
-      <pre><code class="language-javascript">
+  </div>
+
+  <h3 id="code-samples">Code Examples</h3>
+  <hr class="title-break">
+  <div class="box">
+    <h4>Temperature Conversion</h4>
+    <p class="code-text">
+      This ruby program will prompt the user for a temperature in degrees Celsius and let the user know what the corresponding temperature is in Fahrenheit.
+    </p>
+  </div>
+  <div class="box">
+    <pre><code class="language-javascript">
       var n = 0;
       while (n &lt; 10) {
         console.log(&quot;Hello, &quot; + n&quot;);
         n += 1;
       } </code></pre>
-    </div>
-    <br class="clear" />
-    
-    <div class="box">
-      <pre><code class="language-javascript"> 
+  </div>
+  <br class="clear" />
+
+  <div class="box">
+    <pre><code class="language-javascript">
       function findPrimes(n) {
         var primes = new Array(n+1).fill(true);
         var max = Math.sqrt(n);
-        
+
         for (i = 2; i &lt;= max; i++) {
           if (primes[i]) {
             for (j = i*i; j &lt;= n; j += i) {
@@ -62,23 +73,24 @@
         return list;
       }
       </code></pre>
-    </div>
-    <div class="box">
-      <h4>Prime Numbers</h4>
-      <p class="code-text">
-        This Javascript program returns an array of prime numbers up through an integer input n, using the Sieve of Eratosthenes algorithm.
-      </p>
-    </div>
-    <br class="clear" />
-    
-    <div class="box">
-      <h4>FizzBuzz</h4>
-      <p class="code-text">
-      Javascript program for the standard FizzBuzz interview question: Write a program that prints the numbers from 1 to n. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
-      </p>
-    </div>    
-    <div class="box">
-      <pre><code class="language-javascript"> 
+  </div>
+  <div class="box">
+    <h4>Prime Numbers</h4>
+    <p class="code-text">
+      This Javascript program returns an array of prime numbers up through an integer input n, using the Sieve of Eratosthenes algorithm.
+    </p>
+  </div>
+  <br class="clear" />
+
+  <div class="box">
+    <h4>FizzBuzz</h4>
+    <p class="code-text">
+      Javascript program for the standard FizzBuzz interview question: Write a program that prints the numbers from 1 to n. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples
+      of both three and five print "FizzBuzz".
+    </p>
+  </div>
+  <div class="box">
+    <pre><code class="language-javascript">
       var fizzBuzz = function(n) {
         var output;
         for (var i = 1; i &lt;= n; i ++)
@@ -93,15 +105,62 @@
         }
       };
       </code></pre>
-    </div>
-    <br class="clear" />
-    
-    <h3>Skills & Tools</h3>
-    <hr class="title-break" />
-    <p class="skills">
+  </div>
+  <br class="clear" />
+
+  <h3 id="web-apps">Web Apps</h3>
+  <hr class="title-break" />
+  <div class="box">
+    <h4>App #1</h4>
+    <a href="https://placeholder.com"><img src="http://via.placeholder.com/350x150" class="full-width" /></a>
+    <p>
+      A web application to be added later, using some mixture of HTML, CSS, JavaScript, jQuery, React, and Angular.
+    </p>
+  </div>
+  <div class="box">
+    <h4>App #2</h4>
+    <a href="https://placeholder.com"><img src="http://via.placeholder.com/350x150" class="full-width" /></a>
+    <p>
+      A web application to be added later, using some mixture of HTML, CSS, JavaScript, jQuery, React, and Angular.
+    </p>
+  </div>
+  <div class="box">
+    <h4>App #3</h4>
+    <a href="https://placeholder.com"><img src="http://via.placeholder.com/350x150" class="full-width" /></a>
+    <p>
+      A web application to be added later, using some mixture of HTML, CSS, JavaScript, jQuery, React, and Angular.
+    </p>
+  </div>
+  <div class="box">
+    <h4>App #4</h4>
+    <a href="https://placeholder.com"><img src="http://via.placeholder.com/350x150" class="full-width" /></a>
+    <p>
+      A web application to be added later, using some mixture of HTML, CSS, JavaScript, jQuery, React, and Angular.
+    </p>
+  </div>
+  <br class="clear" />
+
+  <h3 id="skills-tools">Skills & Tools</h3>
+  <hr class="title-break" />
+  <p class="skills">
     Kalyan has proficiency and knowledge of the following languages, frameworks, and tools.</p>
-    <div class="icons">
-      <img src="images/skills.png" alt="icons and names of programming languages and tools"/>
+  <div class="icons">
+    <img src="images/skills.png" alt="icons and names of programming languages and tools" />
+  </div>
+
+  <div class="contact">
+    <h3 id="contact-me" class="contact-headline">Contact</h3>
+    <hr class="title-break" />
+    <p class="contact-info">
+      Currently entertaining new opportunies. Please get in touch with me below:
+    </p>
+    <div class="buttons">
+      <a href="mailto:kyalaman@alumni.princeton.edu"><i class="fa fa-envelope-square fa-fw fa-inverse" aria-hidden="true"></i></a>
+      <a href="http://github.com/kyalaman"><i class="fa fa-github fa-fw fa-inverse" aria-hidden="true"></i></a>
+      <a href="http://www.linkedin.com/in/kyalaman/"><i class="fa fa-linkedin-square fa-fw fa-inverse" aria-hidden="true"></i></a>
     </div>
-  </body>
-</html> 
+  </div>
+
+</body>
+
+</html>
