@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Pomodoro Timer</title>
+  <link type="text/css" rel="stylesheet" href="../css/pomodoro.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Simple Pomodoro Technique timer with adjustable rest and work periods and audio notification.">
+</head>
+
+<body>
+  <h1>Pomodoro Timer</h1>
+  <div id="controls">
+    <form>
+      <label>Break (in minutes): </label><input type="number" id="rest" value="5">
+      <label>Work (in minutes): </label><input type="number" id="timer" value="25">
+      <br>
+      <br>
+      <input type="submit" id="submit" value="Set Timer">
+    </form>
+  </div>
+  <div id="clock">
+    <p id="displayType">Work</p>
+    <p id="mainDisplay">25:00</p>
+    <p id="secondaryDisplay">5:00</p>
+    <span id="fill" </span>
+  </div>
+</body>
+<script type="application/javascript" src="../js/pomodoro.js"></script>

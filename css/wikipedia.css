@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  background-color: teal;
+  overflow-y: scroll;
+}
+
+form {
+  margin-top: 200px;
+}
+
+#input {
+  padding: 10px 20px;
+}
+
+#submitButton {
+  font-size: 20px;
+  padding: 5px;
+  height: 40px;
+  margin: 20px;
+}
+
+#random {
+  font-size: 20px;
+  padding: 5px;
+  height: 40px;
+}
+
+#resultsList li {
+  list-style-type: none;
+  padding: 16px;
+  margin: 22px;
+  cursor: pointer;
+  background-color: white;
+}
+
+p {
+  margin: 16px;
+}
+
+#resultsList li:hover {
+  border-left-style: solid;
+  border-right-style: solid;
+  border-color: orange;
+  border-width: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}

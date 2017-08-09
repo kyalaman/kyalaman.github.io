@@ -1,0 +1,40 @@
+body {
+  text-align: center;
+  background-color: #404040;
+  color: white;
+}
+
+#clock {
+  cursor: pointer;
+  height: 300px;
+  width: 300px;
+  border-style: solid;
+  border-color: red;
+  margin: 30px auto;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+input[type=number] {
+  width: 50px;
+}
+
+#mainDisplay {
+  margin-top: 35%;
+  font-size: 36px;
+}
+
+#displayType {
+  font-size: 40px;
+}
+
+#fill {
+  position: absolute;
+  height: 0%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f45342;
+  z-index: -1;
+}
