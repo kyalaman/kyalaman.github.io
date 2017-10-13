@@ -3,7 +3,7 @@ var timerType;
 var work = 25 * 60;
 var time = work;
 var rest = 5 * 60;
-var alarm = new Audio('http://soundbible.com/grab.php?id=1598&type=mp3');
+var alarm = new Audio('../audio/Electronic_Chime-KevanGC.mp3');
 
 document.getElementById("submit").addEventListener("click", function(event) {
   event.preventDefault();
